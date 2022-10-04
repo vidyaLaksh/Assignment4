@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <title>Validated Login Form</title>
+                                <link rel="stylesheet" href="stylelogin.css">
+                            </head>
+                            <body> 
+                                <nav class="nav">
+                                    <ul>
+                                        <li><a href="#home">home</a></li>
+                                        <li><a href="#about">about</a></li>
+                                        <li><a href="#menu">menu</a></li>
+                                        <li><a href="#review">review</a></li>
+                                        <li><a href="#contact">contact</a></li>
+                                        <li><a href="#post">post</a></li>
+                                        <li><a href='/Testing/login.html'>login</a></li>
+                                    </ul>
+                                </nav>
+                            
+                                <div class="container1">
+                                    <h1 class="label">User Login</h1>
+                                    <form class="login_form" action="success.html" method="post" name="form" onsubmit="return validated()">
+                                        <div class="font">Email or Phone</div>
+                                        <input autocomplete="off" type="text" name="email">
+                                        <div id="email_error">Please fill up your Email or Phone</div>
+                                        <div class="font font2">Password</div>
+                                        <input type="password" name="password">
+                                        <div id="pass_error">Please fill up your Password</div>
+                                        <button type="submit">Login</button>
+                                    </form>
+                                </div>	
+                                <script src="valid.js"></script> 
+                                </body>
+                                </html>
